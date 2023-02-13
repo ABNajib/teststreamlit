@@ -18,8 +18,4 @@ root.wm_attributes('-topmost', 1)
 # Folder picker button
 
 st.title('01 CHOOSE THE WORKING DIRECTORY')
-clicked = st.button('Select a folder')
-if clicked:
-    path = st.text_input('Selected folder:', filedialog.askdirectory(master=root))
-    os.chdir(path)
 
